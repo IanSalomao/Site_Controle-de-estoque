@@ -1,0 +1,14 @@
+:root {
+  --bg-form: #f0f0f0;
+  --btn-submit: #25cccc;
+  --btn-table-delet: #a12e2ea9;
+  --btn-table-edit: #979797;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Roboto Flex", "Roboto", sans-serif, "Arial";
+  margin: 0;
+  padding: 0;
+}

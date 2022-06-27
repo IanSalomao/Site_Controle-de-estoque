@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,13 +11,12 @@
     <form id="form_login">
       <h2>Login</h2>
       <label for="">Email</label>
-      <input type="email" id="email" />
+      <input type="email" id="email" required />
       <label for="">Senha</label>
-      <input type="password" id="senha" />
+      <input type="password" id="senha" required />
       <input type="submit" form="form_login" />
-      <div class="msg_erro_login" style="color: #a80c0c"></div>
+      <div class="msg_erro_login"><h4>Usuário ou senha incorreto.</h4></div>
     </form>
   </body>
-  <script src="jQuery-3.6.0.js"></script>
-  <script src="script.js"></script>
+<?php include "scripts.php" ?>
 </html>

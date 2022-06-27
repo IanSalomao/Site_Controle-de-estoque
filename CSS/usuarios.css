@@ -1,0 +1,188 @@
+.sec-1 {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.sec-1 > h4 {
+  margin-top: 30px;
+}
+
+form {
+  background-color: var(--bg-form);
+  padding: 30px;
+  border-radius: 10px;
+  display: block;
+}
+
+input,
+select {
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid #dadada;
+  height: 40px;
+}
+
+.box-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-1 > input {
+  width: 49.5%;
+}
+
+.box-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-2 > input,
+select {
+  width: 32.5%;
+}
+
+.btn-form {
+  background-color: var(--btn-submit);
+  color: #fff;
+  border: none;
+}
+
+.sec-2 {
+  width: 100%;
+  margin-top: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.container_tabela_usuarios {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border: solid 2px #dadada;
+}
+
+.btn_deletar,
+.btn_editar {
+  border: none;
+  padding: 8px;
+  width: 65px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn_deletar {
+  background-color: var(--btn-table-delet);
+}
+
+.btn_editar {
+  background-color: var(--btn-table-edit);
+}
+
+/* Modais */
+.bg_modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #4e4e4e75;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  animation: float ease-in-out normal;
+  animation-duration: 0.5s;
+  transition: 0.3s;
+}
+
+.bg_modal > .modal_delet {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  display: none;
+}
+
+.modal_delet > div > button {
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #e5e5e5;
+}
+
+.bg_modal > .modal_editar {
+  width: 100%;
+  position: absolute;
+  display: none;
+  justify-content: center;
+}
+
+.modal_editar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_editar > #edit_form_usuario {
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-bottom: 0;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#edit_form_usuario > input {
+  margin-top: 0;
+  padding: 10px;
+}
+
+#edit_form_usuario > .box-1 {
+  display: flex;
+  justify-content: center;
+}
+
+#edit_form_usuario > .box-1 > input {
+  width: 50%;
+  padding: 0px 6px 0px 6px;
+  margin: 0;
+  background-color: var(--btn-submit);
+  border: none;
+  height: 40px;
+}
+
+.container_btn_cancelar {
+  background-color: var(--bg-form);
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 0px 0px 10px 10px;
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.container_btn_cancelar > button {
+  width: 50%;
+  padding: 0px 6px 0px 6px;
+  margin-top: 10px;
+  background-color: #dbe9e9;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+}

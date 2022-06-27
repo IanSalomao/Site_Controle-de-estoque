@@ -18,15 +18,15 @@
         >
           <ul class="navbar-nav p-2">
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="#"
+              <a class="nav-link text-light" aria-current="page" href="produtos.php"
                 >Produtos</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-light mx-2" href="#">Usuários</a>
+            <li class="nav-item" id="usuarios">
+              <a class="nav-link text-light mx-2" href="usuarios.php">Usuários</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light mx-2" href="#">Vendas</a>
+              <a class="nav-link text-light mx-2" href="vendas.php">Vendas</a>
             </li>
           </ul>
         </div>

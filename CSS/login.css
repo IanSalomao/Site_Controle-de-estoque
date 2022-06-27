@@ -8,27 +8,46 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: #2d5f5f;
 }
 form {
   display: flex;
   flex-direction: column;
   width: 85%;
   max-width: 350px;
-  background-color: #25cccc;
+  background-color: #202828;
   padding: 30px;
   border-radius: 5px;
-  color: #fff;
+  color: #ffffff;
   margin: 5px;
 }
 
 form > input {
   margin-bottom: 20px;
+  height: 20px;
   padding: 10px;
-  border: #fff 2px solid;
-  background-color: #e3f0ef;
+  border: none;
+  background-color: #ffffff;
   border-radius: 5px;
+}
+
+form > input[type="submit"] {
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 40px;
+}
+
+form > input[type="submit"]:hover {
+  background-color: #d7d7d7;
 }
 
 form > h2 {
   text-align: center;
+}
+
+.msg_erro_login {
+  display: none;
+  color: #ff5a5a;
+  text-align: center;
+  filter: drop-shadow(0px 0px 5px #bf3838);
 }
