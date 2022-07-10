@@ -46,6 +46,7 @@ checagem_de_acesso();
 // Contador de linhas
 function contador(resultado) {
   var container = $(".contador");
+  $(".contador>h6").remove();
   if (resultado == "False") {
     container.prepend("<h6>Esta tabela está vazia</h6>");
   } else {
