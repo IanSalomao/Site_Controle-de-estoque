@@ -22,6 +22,8 @@
         <table class="table table-striped" id="mytable">
           <thead>
               <h4>Tabela de vendas</h4>
+              <div class="contador">
+              </div>
               <tr>
                 <th>ID</th> <!--lembrar de alinhar ao centro -->
                 <th>Código/p</th>
@@ -65,6 +67,7 @@
         </div>
       </div>
     </div>
+      <?php include "footer.php" ?>
   </body>
   <?php include "scripts.php" ?>
   <script>

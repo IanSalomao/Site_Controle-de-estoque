@@ -30,6 +30,8 @@
         <table class="table table-striped" id="mytable">
           <thead>
             <h4>Tabela de usuários</h4>
+              <div class="contador">
+              </div>
               <tr>
                 <th style="text-align:center">ID</th>
                 <th style="text-align:center">Nome</th>
@@ -80,6 +82,7 @@
           </div>
       </div>
     </div>
+      <?php include "footer.php" ?>
   </body>
   <?php include "scripts.php" ?>
   <script>

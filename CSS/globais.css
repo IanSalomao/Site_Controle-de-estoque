@@ -1,14 +1,69 @@
 :root {
-  --bg-form: #f0f0f0;
-  --btn-submit: #25cccc;
+  --bg-1: #042940;
+  --bg-2: #005c53;
+  --bg-form: #f5f6ef;
+  --btn-submit: #9fc131;
   --btn-table-delet: #a12e2ea9;
   --btn-table-edit: #979797;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;800&family=Roboto:wght@400;500;700&display=swap");
 
 * {
-  font-family: "Roboto Flex", "Roboto", sans-serif, "Arial";
+  font-family: "Inter", "Roboto", "Arial";
   margin: 0;
   padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  background-color: #262626;
+}
+
+::-webkit-scrollbar-track {
+  padding: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff70;
+  border: solid 3px #262626;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 20px 0 5px 0;
+  width: 100%;
+  height: auto;
+  background: #232623;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icons {
+  margin: 15px;
+}
+.icons > a {
+  padding: 15px;
+}
+
+#DA {
+  margin: 5px;
+  bottom: 5px;
+  font-size: 15px;
+  color: #979797;
+}
+
+.contador {
+  border: solid 2px #bbbbbb;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contador > h6 {
+  margin: 0;
 }

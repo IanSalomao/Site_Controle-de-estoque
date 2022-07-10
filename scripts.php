@@ -6,3 +6,9 @@
   
   <script src="JS/jQuery-3.6.0.js"></script>
   <script src="JS/script.js"></script>
+
+  <!-- AmCharts.js -->
+
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>

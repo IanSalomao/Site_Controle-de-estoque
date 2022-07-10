@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg" style="background-color: #1e1e1e">
+<nav class="navbar navbar-expand-lg" style="background-color: #005C53">
       <div class="container-fluid">
-        <h2 class="text-light mx-5 my-3" href="#">Loja</h2>
+        <a href="pg.php"><img src="IMG/logo.png" alt="Logo" width="60px"></a>
         <button
           class="navbar-toggler bg-light"
           type="button"
@@ -12,15 +12,14 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
           <ul class="navbar-nav p-2">
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="produtos.php"
-                >Produtos</a
-              >
+              <a class="nav-link text-light" aria-current="page" href="produtos.php">Produtos</a>
             </li>
             <li class="nav-item" id="usuarios">
               <a class="nav-link text-light mx-2" href="usuarios.php">Usuários</a>

@@ -1,6 +1,6 @@
 // - - - - - - - - - FUNÇÕES PADRÃO - - - - - - - - - - -
 
-//Deleta produto
+//Deleta row
 function delet_row(index, tabela) {
   $.ajax({
     url: ".//F_PHP/deletar_row.php",
@@ -24,6 +24,11 @@ function delet_row(index, tabela) {
   });
 }
 
+// Máscara numérica
+function mascara_num(numero) {
+  $(numero).val(parseFloat($(numero).val()).toFixed(2));
+}
+
 function checagem_de_acesso() {
   $.ajax({
     url: ".//F_PHP/checagem_de_acesso.php",
@@ -37,6 +42,16 @@ function checagem_de_acesso() {
 }
 
 checagem_de_acesso();
+
+// Contador de linhas
+function contador(resultado) {
+  var container = $(".contador");
+  if (resultado == "False") {
+    container.prepend("<h6>Esta tabela está vazia</h6>");
+  } else {
+    container.prepend("<h6>Linhas:" + resultado.length + "</h6>");
+  }
+}
 
 // - - - - - - - - - LOGIN - - - - - - - - - - -
 $("#form_login").submit(function (e) {
@@ -66,8 +81,8 @@ $("#form_produto").submit(function (e) {
   var nome = $("#nome").val();
   var fornecedor = $("#fornecedor").val();
   var quantidade = $("#quantidade").val();
-  var custo = $("#custo").val();
-  var valor = $("#valor").val();
+  var custo = $("#custo").val().replace(",", ".");
+  var valor = $("#valor").val().replace(",", ".");
   var codigo = $("#codigo").val();
 
   $.ajax({
@@ -104,6 +119,7 @@ function getTabela_produto() {
     },
     dataType: "json",
   }).done(function (resultado) {
+    contador(resultado);
     if (resultado == "False") {
     } else {
       var tabela_produtos = document.querySelector(".tabela_produtos");
@@ -124,10 +140,10 @@ function getTabela_produto() {
             resultado[i].id +
             "</p></td>" +
             "<td><p>" +
-            resultado[i].nome +
+            resultado[i].nome_u +
             "</p></td>" +
             "<td><p>" +
-            resultado[i].nome_u +
+            resultado[i].nome +
             "</p></td>" +
             "<td><p>" +
             resultado[i].codigo +
@@ -369,6 +385,7 @@ function getTabela_usuario() {
     },
     dataType: "json",
   }).done(function (resultado) {
+    contador(resultado);
     if (resultado == "False") {
     } else {
       var tabela_usuarios = document.querySelector(".tabela_usuarios");
@@ -557,6 +574,7 @@ function getTabela_venda() {
     },
     dataType: "json",
   }).done(function (resultado) {
+    contador(resultado);
     if (resultado == "False") {
     } else {
       var tabela_usuarios = document.querySelector(".tabela_vendas");

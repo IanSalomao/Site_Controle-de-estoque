@@ -8,15 +8,26 @@
     <title>Login</title>
   </head>
   <body>
-    <form id="form_login">
-      <h2>Login</h2>
-      <label for="">Email</label>
-      <input type="email" id="email" required />
-      <label for="">Senha</label>
-      <input type="password" id="senha" required />
-      <input type="submit" form="form_login" />
-      <div class="msg_erro_login"><h4>Usuário ou senha incorreto.</h4></div>
-    </form>
+    <div id="background">
+      <div class="container-1">
+        <form id="form_login">
+          <img src="IMG/login.png" alt="Login" >
+          <label for="">Email</label>
+          <input type="email" id="email" required />
+          <label for="">Senha</label>
+          <input type="password" id="senha" required />
+          <input type="submit" form="form_login" />
+          <div class="msg_erro_login"><h4>Usuário ou senha incorreto.</h4></div>
+        </form>
+      </div>
+      <div class="container-2">
+        <div>
+          <p>Em prol de um mundo mais</p>
+          <h1>verde</h1>
+        </div>
+      </div>
+    </div>
+      <?php include "footer.php" ?>
   </body>
 <?php include "scripts.php" ?>
 </html>

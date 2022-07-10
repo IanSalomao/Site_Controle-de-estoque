@@ -16,9 +16,9 @@
         </div>
         <div class="box-2">
           <input type="number" id="quantidade" placeholder="Quantidade" required/>
-          <input type="text" id="custo" placeholder="Custo" required/>
-          <input type="text" id="valor" placeholder="Valor de venda" required/>
-          <input type="text" id="codigo" placeholder="Código do produto" required/> 
+          <input type="number" step="0.010" id="custo" placeholder="Custo" onkeyup="mascara_num(this)" required/>
+          <input type="number" step="0.010" id="valor" placeholder="Valor de venda" onkeyup="mascara_num(this)" required/>
+          <input type="number" id="codigo" placeholder="Código do produto" required/> 
        </div>
         <input value="Cadastrar" class="btn-form" type="submit" form="form_produto" />
       </form>
@@ -31,7 +31,9 @@
               <h4>Tabela de Produtos</h4>
               <div class="warning_produtos">
                 <img src="IMG/warning.png" alt="warning icone" width="40px">
-                <h6>O seu estoque tem menos de 10 produs!</h6>
+                <h6>O estoque tem menos de 10 produtos!</h6>
+              </div>
+              <div class="contador">
               </div>
               <tr>
                 <th style="text-align:center">ID</th>
@@ -71,11 +73,11 @@
             <label>Quantidade</label>
             <input type="number" id="edit_quantidade" placeholder="Quantidade" required/>
             <label>Custo</label>
-            <input type="text" id="edit_custo" placeholder="Custo" required/>
+            <input type="number" id="edit_custo" placeholder="Custo" onkeyup="mascara_num(this)" required/>
             <label>Valor de venda</label>
-            <input type="text" id="edit_valor" placeholder="Valor de venda" required/>
+            <input type="number" id="edit_valor" placeholder="Valor de venda" onkeyup="mascara_num(this)" required/>
             <label>Código do produto</label>
-            <input type="text" id="edit_codigo" placeholder="Código do produto" required/>
+            <input type="number" id="edit_codigo" placeholder="Código do produto" required/>
             <div class="box-1">
               <input value="Salvar alterações" class="edit_btn-form" id="salvar" type="submit" form="edit_form_produto" />
             </div>
@@ -86,6 +88,7 @@
         </div>
       </div>
     </div>
+      <?php include "footer.php" ?>
   </body>
   <?php include "scripts.php" ?>
   <script>

@@ -1,0 +1,74 @@
+@import url(globais.css);
+
+nav {
+  background: var(--bg-2);
+  height: 100%;
+  width: 190px;
+  color: #fff;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+#logo {
+  margin: 30px 0 0 30%;
+  transition: 0.5s;
+  width: 60px;
+}
+
+#logo:hover {
+  filter: drop-shadow(0px 0px 4px #ffffff96);
+}
+
+li {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+#links {
+  margin: 2px 0px 2px 4px;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#links:hover {
+  background: #fff;
+  color: var(--bg-2);
+  border-radius: 25px 0px 0px 25px;
+}
+
+.container_user {
+  background-color: #ffffff20;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#imagem_usuario {
+  filter: invert();
+  width: 30%;
+}
+
+.container_user > div {
+  width: 55%;
+}
+
+.container_user > div > p {
+  margin: 0;
+  font-size: 12px;
+}
+
+#sair {
+  filter: invert();
+}
+
+@media screen and (max-width: 800px) {
+}
